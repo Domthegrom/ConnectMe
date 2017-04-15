@@ -1,0 +1,17 @@
+{
+  "name": "clone",
+  "version": "0.0.0",
+  "description": "Hello Expo!",
+  "author": null,
+  "private": true,
+  "main": "main.js",
+  "dependencies": {
+    "expo": "^15.0.2",
+    "firebase": "^3.7.8",
+    "geofire": "^4.1.2",
+    "react": "~15.4.0",
+    "react-native": "https://github.com/exponent/react-native/archive/sdk-15.0.0.tar.gz",
+    "react-native-multislider": "0.0.14",
+    "react-navigation": "git+https://github.com/react-community/react-navigation.git"
+  }
+}
