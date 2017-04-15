@@ -1,4 +1,4 @@
-Clone is intended to be a business professional connector application. 
+##Clone is intended to be a business professional connector application. 
 
 Allowing for like minded people to connect to each other for business/development chats and meet ups!
 
@@ -10,8 +10,8 @@ I couldn't find anyone! That is where I came up with the idea of creating this a
 
 This app will tackle a bunch of different industies and personal interests such as but not limited to:
 
-1.Software Engineering/Computer Programming
-2.Computer Games
+Software Engineering/Computer Programming
+Computer Games
 Computer Hardware
 Coputer Networking
 IT Secuirty
