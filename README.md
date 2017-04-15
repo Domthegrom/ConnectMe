@@ -10,8 +10,8 @@ I couldn't find anyone! That is where I came up with the idea of creating this a
 
 This app will tackle a bunch of different industies and personal interests such as but not limited to:
 
-Software Engineering/Computer Programming
-Computer Games
+1.Software Engineering/Computer Programming
+2.Computer Games
 Computer Hardware
 Coputer Networking
 IT Secuirty
