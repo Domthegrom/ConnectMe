@@ -28,3 +28,16 @@ I couldn't find anyone! That is where I came up with the idea of creating this a
 Not only will users be paired up with the right person by their industry but also by their person Interests.
 
 For Example if I was to sign up I would chose Software Engineering as my industry and underneath the umbrella of Software Engineering I would choose a handful of interests. Such as: Javascript, React Native, Start Ups, Mobile App Development, Mobile Design
+
+
+# ToDo
+
+* Adding headers
+* Creating a business professional layout and design
+* Add a ListView of fields on the profile page (fields being: interests, work history, bio, education)
+* Add settings button to the profile page(top right of header)
+* Add two buttons and a header to the Matches screen. One for profile, one for messages.
+* Create a screen for upon sign in that shows what the app is all about and how to use it(scrolling horizontally)
+* Add two buttons to the Login screen. Sign in with Linkedin, and Sign in with Email.
+* Create a Terms of Use and Privacy Policy area both before sign in of the app and inside of settings.
+* Push notifications, for messages, as well as updates, and to keep user engaged.
