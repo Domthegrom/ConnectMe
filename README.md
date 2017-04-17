@@ -1,4 +1,4 @@
-Clone is intended to be a business professional connector application. 
+## Clone is intended to be a business professional connector application. 
 
 Allowing for like minded people to connect to each other for business/development chats and meet ups!
 
@@ -8,22 +8,22 @@ This first came to my mind when I wanted to find someone to desperately teach me
 I really needed help learning how to code and develop, as well as understand how to run and own a business! 
 I couldn't find anyone! That is where I came up with the idea of creating this app Clone.
 
-This app will tackle a bunch of different industies and personal interests such as but not limited to:
+## This app will tackle a bunch of different industies and personal interests such as but not limited to:
 
-Software Engineering/Computer Programming
-Computer Games
-Computer Hardware
-Coputer Networking
-IT Secuirty
-Consumer Electronics
-Business Development
-Start Ups(tech or not tech)
-Entertainment(Music)
-Graphic Design
-Real Estate
-Think Tanks
-Civil Engineer
-Law(Pratice, Enforcement, services)
+* Software Engineering/Computer Programming
+* Computer Games
+* Computer Hardware
+* Coputer Networking
+* IT Secuirty
+* Consumer Electronics
+* Business Development
+* Start Ups(tech or not tech)
+* Entertainment(Music)
+* Graphic Design
+* Real Estate
+* Think Tanks
+* Civil Engineer
+* Law(Pratice, Enforcement, services)
 
 Not only will users be paired up with the right person by their industry but also by their person Interests.
 
