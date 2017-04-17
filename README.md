@@ -34,7 +34,7 @@ For Example if I was to sign up I would chose Software Engineering as my industr
 
 * Adding headers
 * Creating a business professional layout and design
-* Add a ListView of fields on the profile page (fields being: interests, work history, bio, education)
+* Add a ListView of fields on the profile page (fields being: interests, work history, bio, education) then relate this to the card matches
 * Add settings button to the profile page(top right of header)
 * Add two buttons and a header to the Matches screen. One for profile, one for messages.
 * Create a screen for upon sign in that shows what the app is all about and how to use it(scrolling horizontally)
