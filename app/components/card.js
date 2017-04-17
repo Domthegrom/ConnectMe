@@ -19,6 +19,7 @@ export default class Card extends Component {
 
     this.cardPanResponder = PanResponder.create({
       onStartShouldSetPanResponder: () => true,
+      onPanResponderTerminationRequest: () => false,
       onPanResponderMove: Animated.event([
         null,
         {dx:this.pan.x, dy:this.pan.y},

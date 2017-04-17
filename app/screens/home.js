@@ -8,6 +8,7 @@ import Card from '../components/card'
 import SimpleScroller from '../components/simpleScroller'
 
 import Profile from './profile'
+import Matches from './matches'
 
 export default class Home extends Component {
 
@@ -55,6 +56,7 @@ export default class Home extends Component {
       const user = await this.getUser(uid)
       console.log(user.val().first_name)
       const profiles = [...this.state.profiles, user.val()]
+      //filter
       this.setState({profiles})
     })
   }
@@ -118,6 +120,7 @@ export default class Home extends Component {
         screens ={[
           <Profile user={this.state.user}/>,
           this.cardStack(),
+          <Matches navigation={this.props.navigation}user={this.state.user}/>
           ]}
       />
     )

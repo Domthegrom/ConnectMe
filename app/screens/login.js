@@ -1,7 +1,7 @@
 import Expo from 'expo'
 import firebase from 'firebase'
 import React, {Component} from 'react'
-import {View, StyleSheet, ActivityIndicator} from 'react-native'
+import {View, StyleSheet, Text, ActivityIndicator} from 'react-native'
 import { NavigationActions } from 'react-navigation'
 import FacebookButton from '../components/facebookButton'
 
@@ -68,6 +68,18 @@ export default class Login extends Component {
   render() {
     return (
       <View style={styles.container}>
+        <View style={styles.logo}>
+          <Text 
+          style={{fontSize: 64, color: '#34B3E4', textAlign: 'center',}}>
+          Clone
+          <Text style={{fontSize: 64, color: '#0077B5'}}>
+          </Text>
+          </Text>
+          <Text
+           style={{fontSize: 13, opacity: 0.8, color: '#0077B5', textAlign: 'center'}}>
+           Clone your favorite skills
+           </Text>
+        </View>
         {this.state.showSpinner ?
           <ActivityIndicator animating={this.state.showSpinner} /> :
           <FacebookButton onPress={this.login} />
@@ -82,5 +94,9 @@ const styles = StyleSheet.create({
     flex:1,
     alignItems: 'center',
     justifyContent: 'center',
+    backgroundColor: 'red'
   },
+  logo: {
+    marginBottom: 25,
+  }
 })

@@ -6,14 +6,21 @@ import {
   Switch,
   ListView,
   TextInput,
+  Button,
 } from 'react-native'
 
 import *  as firebase from 'firebase'
 
 import Slider from 'react-native-multislider'
 import CircleImage from '../components/circleImage'
+import ProfileList from '../components/profileList' 
 
 export default class Profile extends Component {
+
+static navigationOptions = {
+    title: 'Me!',
+    headerRight: <Button title="Info" />,
+  }
 
   state = {
     ageRangeValues: [18, 24],
@@ -48,6 +55,7 @@ export default class Profile extends Component {
           onValuesChange={val => this.setState({distanceValue:val})}
           onValuesChangeFinish={val => this.updateUser('distance', val[0])}
         />
+        <ProfileList />
       </View>
     )
   }
