@@ -55,3 +55,4 @@ For Example if I was to sign up I would chose Software Engineering as my industr
 * Add two buttons to the Login screen. Sign in with Linkedin, and Sign in with Email.
 * Create a Terms of Use and Privacy Policy area both before sign in of the app and inside of settings.
 * Push notifications, for messages, as well as updates, and to keep user engaged.
+* Filter by interests
