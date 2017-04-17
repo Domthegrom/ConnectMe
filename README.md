@@ -29,6 +29,19 @@ Not only will users be paired up with the right person by their industry but als
 
 For Example if I was to sign up I would chose Software Engineering as my industry and underneath the umbrella of Software Engineering I would choose a handful of interests. Such as: Javascript, React Native, Start Ups, Mobile App Development, Mobile Design
 
+# What is done
+
+* Facebook login with firebase
+* Facebook loads and grabs profile picture and places it on the profile page.
+* A distance slider that changes the distance that users profiles will populate (working with firebase) filter by location
+* Card Matches, swiping and animations that knows when a user has liked or not liked another user to properly create a match and start a chat.
+* Gifted Chat that is only available when two users match and then you are able to speak to the user through there.(back by firebase)
+* Firebase Security
+* Lockdown Users and Location
+* Lockdown Relationships
+* Lockdown Messages
+* Accessing User Location
+* Navigation
 
 # ToDo
 
