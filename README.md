@@ -27,7 +27,7 @@ I couldn't find anyone! That is where I came up with the idea of creating this a
 
 Not only will users be paired up with the right person by their industry but also by their person Interests.
 
-For Example if I was to sign up I would chose Software Engineering as my industry and underneath the umbrella of Software Engineering I would choose a handful of interests. Such as: Javascript, React Native, Start Ups, Mobile App Development, Mobile Design
+For Example, if I was to sign up I would choose Software Engineering as my industry and underneath the umbrella of Software Engineering, I would choose a handful of interests. Such as Javascript, React Native, Start-Ups, Mobile App Development, Mobile Design
 
 # What is done
 
