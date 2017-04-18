@@ -45,6 +45,7 @@ For Example, if I was to sign up I would choose Software Engineering as my indus
 
 # ToDo
 
+* Linkedin Login
 * Implement Redux
 * Adding headers
 * Creating a business professional layout and design
