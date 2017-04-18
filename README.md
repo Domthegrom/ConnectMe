@@ -46,7 +46,6 @@ For Example, if I was to sign up I would choose Software Engineering as my indus
 # ToDo
 
 * Linkedin Login
-* Implement Redux
 * Adding headers
 * Creating a business professional layout and design
 * Add a ListView of fields on the profile page (fields being: interests, work history, bio, education) then relate this to the card matches
