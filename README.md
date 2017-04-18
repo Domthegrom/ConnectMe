@@ -42,10 +42,6 @@ For Example, if I was to sign up I would choose Software Engineering as my indus
 * Lockdown Messages
 * Accessing User Location
 * Navigation
-# Key
-** = done
-! = needs work but started
-!! = need to being work 
 
 # ToDo
 
