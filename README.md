@@ -45,13 +45,11 @@ For Example, if I was to sign up I would choose Software Engineering as my indus
 
 # ToDo
 
-* Adding headers
 * Creating a business professional layout and design 
-* Add a ListView of fields on the profile page (fields being: interests, work history, bio, education) then relate this to the card matches
-* Add settings button to the profile page(top right of header)
-* Add two buttons and a header to the Matches screen. One for profile, one for messages.
+* Add a ListView of fields on the profile page (fields being: interests, work history, bio, education) then relate this to the card matches (need to back it by firebase and add it to cards but it is there in a Row)
+* Add two buttons and a header to the Matches screen. One for profile, one for messages.(Done need to add onPress)
 * Create a screen for upon sign in that shows what the app is all about and how to use it(scrolling horizontally)
-* Add two buttons to the Login screen. Sign in with Linkedin, and Sign in with Email.
+* Linkedin sign-in authentication
 * Create a Terms of Use and Privacy Policy area both before sign in of the app and inside of settings.
 * Push notifications, for messages, as well as updates, and to keep user engaged.
 * Filter by interests
