@@ -14,12 +14,12 @@ import *  as firebase from 'firebase'
 import Slider from 'react-native-multislider'
 import CircleImage from '../components/circleImage'
 import ProfileList from '../components/profileList' 
+import ProfileHeader from '../components/profileHeader'
 
 export default class Profile extends Component {
 
 static navigationOptions = {
     title: 'Me!',
-    headerRight: <Button title="Info" />,
   }
 
   state = {
@@ -39,6 +39,7 @@ static navigationOptions = {
     const bio = (work && work[0] && work[0].position) ? work[0].position.name : null
     return (
       <View style={styles.container}>
+        <ProfileHeader />
         <View style={styles.profile}>
           <CircleImage facebookID={id} size={120} />
           <Text style={{fontSize:20}}>{first_name}</Text>

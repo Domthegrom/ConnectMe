@@ -11,10 +11,6 @@ import * as firebase from 'firebase'
 import {GiftedChat} from 'react-native-gifted-chat'
 
 export default class Chat extends Component {
-  static navigationOptions = {
-    title: 'Chat!',
-    Left: <Button title="Back" />,
-  }
 
   state={
     messages:[],

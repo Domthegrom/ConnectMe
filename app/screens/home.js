@@ -6,6 +6,8 @@ import GeoFire from 'geofire'
 
 import Card from '../components/card'
 import SimpleScroller from '../components/simpleScroller'
+import filter from '../modules/filter'
+import HomeHeader from '../components/homeHeader'
 
 import Profile from './profile'
 import Matches from './matches'
@@ -46,18 +48,18 @@ export default class Home extends Component {
     const geoFireRef = new GeoFire(firebase.database().ref('geoData'))
     const userLocation = await geoFireRef.get(uid)
     const swipedProfiles = await this.getSwiped(uid)
-    console.log('userLocation', userLocation)
+    //console.log('userLocation', userLocation)
     const geoQuery = geoFireRef.query({
       center: userLocation,
       radius: distance, //mi
     })
     geoQuery.on('key_entered', async (uid, location, distance) => {
-      console.log(uid + ' at ' + location + ' is ' + distance + 'km from the center')
+      //console.log(uid + ' at ' + location + ' is ' + distance + 'km from the center')
       const user = await this.getUser(uid)
-      console.log(user.val().first_name)
+      //console.log(user.val().first_name)
       const profiles = [...this.state.profiles, user.val()]
-      //filter
-      this.setState({profiles})
+      const filtered = filter(profiles, this.state.user) //filter
+      this.setState({profiles: filtered})
     })
   }
 
@@ -73,9 +75,9 @@ export default class Home extends Component {
       const geoFireRef = new GeoFire(firebase.database().ref('geoData'))
       geoFireRef.set(uid, [latitude, longitude])
 
-      console.log('Permission Granted', location)
+      //console.log('Permission Granted', location)
     } else {
-      console.log('Permission Denied')
+      //console.log('Permission Denied')
     }
   }
 
@@ -101,6 +103,7 @@ export default class Home extends Component {
     const {profileIndex} = this.state
     return (
       <View style={{flex:1}}>
+        <HomeHeader />
         {this.state.profiles.slice(profileIndex, profileIndex + 3).reverse().map((profile) => {
           return (
             <Card

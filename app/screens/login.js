@@ -4,6 +4,7 @@ import React, {Component} from 'react'
 import {View, StyleSheet, Text, ActivityIndicator} from 'react-native'
 import { NavigationActions } from 'react-navigation'
 import FacebookButton from '../components/facebookButton'
+import LinkedinButton from '../components/linkedinButton'
 
 export default class Login extends Component {
 
@@ -71,7 +72,7 @@ export default class Login extends Component {
         <View style={styles.logo}>
           <Text 
           style={{fontSize: 64, color: '#34B3E4', textAlign: 'center',}}>
-          Clone
+          ConnectMe
           <Text style={{fontSize: 64, color: '#0077B5'}}>
           </Text>
           </Text>
@@ -84,6 +85,7 @@ export default class Login extends Component {
           <ActivityIndicator animating={this.state.showSpinner} /> :
           <FacebookButton onPress={this.login} />
         }
+        <LinkedinButton />
       </View>
     )
   }
@@ -94,9 +96,9 @@ const styles = StyleSheet.create({
     flex:1,
     alignItems: 'center',
     justifyContent: 'center',
-    backgroundColor: 'red'
+    backgroundColor: 'midnightblue'
   },
   logo: {
-    marginBottom: 25,
+    marginBottom: 60,
   }
 })

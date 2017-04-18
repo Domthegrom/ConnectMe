@@ -10,6 +10,7 @@ import * as firebase from 'firebase'
 import _ from 'lodash'
 
 import CircleImage from '../components/circleImage'
+import MatchesHeader from '../components/matchesHeader'
 
 export default class Matches extends Component {
 
@@ -37,7 +38,7 @@ export default class Matches extends Component {
     firebase.database().ref('relationships').child(uid).on('value', snap => {
       const relations = snap.val() || []
       const allMatches = this.getOverlap(relations.liked, relations.likedBack)
-      console.log('allMatches', allMatches)
+      //console.log('allMatches', allMatches)
       const promises = allMatches.map(profileUid => {
         const foundProfile = _.find(this.state.matches, profile => profile.uid === profileUid)
         return foundProfile ? foundProfile : this.getUser(profileUid)
@@ -53,6 +54,8 @@ export default class Matches extends Component {
     const {id, first_name, work} = rowData
     const bio = (work && work[0] && work[0].position) ? work[0].position.name : null
     return (
+      <View>
+        <MatchesHeader />
       <TouchableHighlight
             onPress={() => this.props.navigation.navigate('Chat',{user:this.props.user, profile:rowData})} >
           <View style={{flexDirection:'row', backgroundColor:'white', padding:10}} >
@@ -63,6 +66,7 @@ export default class Matches extends Component {
             </View>
           </View>
       </TouchableHighlight>
+        </View>
     )
   }
 
@@ -80,6 +84,7 @@ export default class Matches extends Component {
         renderRow={this.renderRow}
         renderSeparator={this.renderSeparator}
         enableEmptySections
+        
       />
     )
   }
