@@ -46,7 +46,7 @@ For Example, if I was to sign up I would choose Software Engineering as my indus
 # ToDo
 
 * Creating a business professional layout and design 
-* Add a ListView of fields on the profile page (fields being: interests, work history, bio, education) then relate this to the card matches (need to back it by firebase and add it to cards but it is there in a Row)
+* Add a ScrollView of fields on the profile page (fields being: interests, work history, bio, education) then relate this to the card matches (need to back it by firebase and add it to cards but it is there in a Row)(Was a listView, need to change to ScrollView)
 * Add two buttons and a header to the Matches screen. One for profile, one for messages.(Done need to add onPress)
 * Create a screen for upon sign in that shows what the app is all about and how to use it(scrolling horizontally)
 * Linkedin sign-in authentication
