@@ -51,7 +51,7 @@ static navigationOptions = {
         </View>
         <Slider
           min={1}
-          max={30}
+          max={100}
           values={distanceValue}
           onValuesChange={val => this.setState({distanceValue:val})}
           onValuesChangeFinish={val => this.updateUser('distance', val[0])}

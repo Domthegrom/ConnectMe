@@ -4,6 +4,7 @@ import {
   Text,
   View,
   StyleSheet,
+  KeyboardAvoidingView,
 } from 'react-native'
 
 
@@ -11,31 +12,44 @@ export default class Row extends Component {
 
   render() {
     return (
-        <View style={styles.container}>
+        <KeyboardAvoidingView style={styles.container}>
                 <TextInput
-                 style={styles.input}
+                 style={styles.interests}
                  placeholder= 'Interests'
-                 placeholderTextColor='rgba(255,255,255,0.9)'
+                 placeholderTextColor='black'
                  autoCorrect={true} 
                 />
+                <View style={styles.border}>
+                </View>
                  <TextInput
-                 style={styles.input}
+                 style={styles.bio}
                  placeholder='Bio'
-                 placeholderTextColor='rgba(255,255,255,0.9)'
+                 placeholderTextColor='black'
                  autoCorrect={true} 
                 />
+                <View style={styles.border}>
+                </View>
                 <TextInput
                  style={styles.input}
                  placeholder= 'My Industry'
-                 placeholderTextColor='rgba(255,255,255,0.9)'
+                 placeholderTextColor='black'
                  autoCorrect={true} 
                 />
+                <View style={styles.border}>
+                </View>
                 <TextInput
                  style={styles.input}
                  placeholder= 'Education'
-                 placeholderTextColor='rgba(255,255,255,0.9)'
+                 placeholderTextColor='black'
                 />
-         </View>
+                <View style={styles.border}>
+                </View>
+                 <TextInput
+                 style={styles.input}
+                 placeholder= 'Work History'
+                 placeholderTextColor='black'
+                />
+         </KeyboardAvoidingView>
     )
   }
 }
@@ -47,18 +61,32 @@ const styles = StyleSheet.create ({
    },
    input: {
        height: 40,
-       backgroundColor: '#34B3E4',
+       backgroundColor: 'white',
+       marginBottom: 10,
+       color : '#FFF',
+       paddingHorizontal: 10,
+   },
+   border: {
+       height:1,
+       backgroundColor:'whitesmoke',
+       marginBottom: 5
+   },
+   interests: {
+       height: 70,
+       backgroundColor: 'white',
+       marginBottom: 10,
+       color : '#FFF',
+       paddingHorizontal: 10,
+   },
+   bio: {
+       height: 50,
+       backgroundColor: 'white',
        marginBottom: 10,
        color : '#FFF',
        paddingHorizontal: 10,
    },
    buttonContainer: {
-       backgroundColor: '#34B3E4',
+       backgroundColor: 'white',
        paddingVertical: 12,
-   },
-   buttonText: {
-       color: 'white',
-       textAlign: 'center',
-       fontWeight: '700',
    },
 });
